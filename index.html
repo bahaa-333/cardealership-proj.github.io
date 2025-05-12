@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Dealership Website</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+    <script src="./scripts/script.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo-container">
+            <a href="index.html"><img src="assets/nav-logo.png" alt="Car Dealership Logo" class="logo"></a>
+        </div>
+        <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="managing-page.html">Manage Listings</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <video width="100%" autoplay loop muted>
+            <source src="./assets/background_photo.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Beyond the Drive, <br>Embrace the Rides</h1>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="assets/showroom.jpg" alt="Dealership Building">
+        </div>
+        <div class="about-text">
+            <h2>Who are we?</h2>
+            <p>Our dealership is a company founded in 2023. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at justo et lectus efficitur bibendum a blandit ut massa magna aliqu. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+    </section>
+
+    <!-- Car Listings Section -->
+    <section class="listings" id="listings">
+        <div class="yellow-line"></div>
+        <h2>Cars Listings</h2>
+        <div class="cars-container">
+            <div class="filters">
+                <p class="filter-title">Filters:</p>
+                <div class="filter-option">
+                    <label for="brand">Brand</label>
+                    <select id="brand-filter">
+                        <option value="">All Brands</option>
+                    </select>
+                </div>
+                <div class="filter-option">
+                    <label for="model">Model</label>
+                    <select id="model-filter">
+                        <option value="">All Models</option>
+                    </select>
+                </div>
+                <div class="filter-option">
+                    <label for="year">Year</label>
+                    <select id="year-filter">
+                        <option value="">All Years</option>
+                    </select>
+                </div>
+                <div class="filter-option">
+                    <label for="color">Color</label>
+                    <select id="color-filter">
+                        <option value="">All Colors</option>
+                    </select>
+                </div>
+            </div>
+            <div class="car-list" id="car-list">
+                <!-- Car cards will be dynamically added here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <img src="assets/car-dealership-high-resolution-logo.png" alt="Car Dealership Logo" class="footer-logo">
+        <div class="footer-links">
+            <h2>Contact Us</h2>
+            <p>Address: 1234 Car St, Auto City, CA 12345</p>
+            <p>Email:cardealeraship@gmail.com</p>
+            <p>Phone: +1 (123) 456-7890</p>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        <p>Copyright Car Dealership &copy;  2025</p>
+    </div>
+
+    <!-- Car Detail Modal -->
+    <div class="modal" id="car-modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body" id="modal-body">
+                <!-- Modal content will be dynamically added here -->
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>

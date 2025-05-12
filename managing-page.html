@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Managing Cars page</title>
+    <link href="styles/managing-page.css" rel="stylesheet">
+    <script src="scripts/managing-page.js" defer></script>
+    </head>
+<body>
+    <a href="index.html " class="home-button">← Return to Homepage</a>
+    <h1>Car Information System</h1>
+    <form class="form" id="carForm">
+        <h2>Car Information</h2>
+        <input type="file" id="img" name="img" accept="image/*" onchange="previewImage(event)" required>
+        <img id="preview" src="" alt="Image Preview" ><br>
+        <input type="text" id="idcar" placeholder="Car ID" required><br>
+        <input type="text" id="brand" placeholder="Brand" required>
+        <input type="text" id="model" placeholder="Model" required>
+        <input type="number" id="year" placeholder="Year" required><br>
+        <input type="number" id="meterage" placeholder="Meterage" >
+        <input type="number" id="price" placeholder="Price" required>
+        <input type="text" id="color" placeholder="Color" required><br>
+        <h2>Seller's Information</h2>
+        <input type="text" id="seller-name" placeholder="Seller's name" required>
+        <input type="tel" id="seller-phone" placeholder="Seller's phone">
+        <input type="email" id="seller-email" placeholder="Seller's email" required><br>
+        <button id="submit-btn" type="button" onclick="submitCar()">Submit</button>
+    </form>
+    
+    <div id="car-list">
+        <h2>Saved Cars</h2>
+        <div id="container"></div>
+    </div>
+
+    
+</body>
+</html>
