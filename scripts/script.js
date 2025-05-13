@@ -168,10 +168,11 @@ function openCarcard(carId) {
                     <label for="message">Message</label>
                     <textarea id="message" required>I'm interested in the ${car.year} ${car.brand} ${car.model}.</textarea>
                 </div>
-                <button type="submit" class="submit-btn">Send Message</button>
+                <button type="submit" class="submit-btn" onclick="consl()">Send Message</button>
             </form>
         </div>
     `;
+    
     modal.style.display = 'block';
     // Add event listener to form submission
     document.getElementById('contact-form').addEventListener('submit', function(e) {
@@ -208,4 +209,9 @@ function openCarcard(carId) {
             displayCars(carData);
             dropdownFilters();
         }
+    };
+    function consl(){
+        const n = document.getElementById('name').value;
+        const t = document.getElementById('message').value;
+        console.log(n + " has sent you a message:" + t);
     };
